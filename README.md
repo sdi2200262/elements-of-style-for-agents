@@ -34,5 +34,5 @@ prose. The cited books remain separate works.
 
 ## License
 
-The original material in this repository is released under
+The original material in this repository is dedicated to the public domain under
 [CC0 1.0 Universal](LICENSE).
