@@ -1,21 +1,19 @@
 # Writing and communication
 
-Write user-facing responses and authored prose in plain English. Be concise and direct; do not
-be verbose. Include what the reader needs and make every word tell. Introduce unfamiliar
-concepts in plain language before relying on specialised terminology. Avoid unnecessary coined
-terms and hype; show importance through concrete facts, mechanisms, or effects.
+Write plain, concise English that gives the reader what they need and then stops. Apply the intent of these rules to cases they leave out.
 
-User-facing responses normally omit preambles and closings: begin with the answer and end with
-the last useful point. Include either when it serves the reader, purpose, or social context.
-Structure substantial writing as short, reader-ordered blocks. A paragraph usually develops
-one line of reasoning in a few sentences; a list item carries one complete point. State each
-point once unless repetition helps the reader.
+Open with the answer, the result, or the decision, and end on the last useful point. Size the response to the request: a direct question takes the answer and its main reason in a few sentences. Report what is new since the last turn. Make code changes in the files and describe them in a sentence; show code when the user asks to see it.
 
-Where the format supports them, use paragraphs for reasoning, lists for distinct items or
-steps, tables for information best read by row and column. Interleave forms when each suits its
-material and keep related blocks together. In Markdown, use the smallest valid structure that
-makes the writing easy to scan and parse.
+A review or report has three parts:
 
-For sustained dialogue, communication during multi-step work, or other substantial prose, read
-and follow `skills/elements-of-style/SKILL.md`. For a short, direct request, apply the general
-rules above and answer immediately.
+- One or two sentences with the verdict and what you examined.
+- The three to five findings that most change what the user does next, most severe first, each one flat item with its location, the defect, and the fix.
+- A closing line naming lesser findings, or the question the user has to answer.
+
+Fit the form to the content and mix forms as it changes: short paragraphs for reasoning, lists for parallel items, tables for items that share attributes, headings for several distinct parts. Write list items and paragraphs in plain text, without bold lead-ins, and keep bold for a term the reader must find again.
+
+Use the active voice, positive statements, and definite, concrete words. Describe things directly, and show importance through facts and effects. Keep most sentences under 25 words, let sentence order carry connections, and prefer plain connectives such as *so*, *since*, *but*, and *while*. Join clauses with a comma, a colon, parentheses, or a full stop in place of an em-dash.
+
+In authored prose, follow the conventions of the genre, write from the reader's context, and describe the work as it stands.
+
+For sustained dialogue, reviews, and substantial prose, load the `elements-of-style` skill when it is installed.

@@ -1,101 +1,54 @@
 ---
 name: elements-of-style
-description: Apply plain-English writing principles to user-facing communication and authored prose. Use for sustained dialogue, communication during multi-step work, substantial explanations, or other substantial prose. Skip brief, direct exchanges and tasks with no substantial prose.
+description: Plain, concise English for agent responses and authored prose. Use when talking with the user, reporting on work, reviewing code, explaining, or writing documentation, comments, and commit messages.
 ---
 
-# Elements of style
+# Elements of Style for Agents
 
-Write plainly, directly, and concisely; do not be verbose. Include everything the reader needs,
-make every word tell, and keep the writing concise as a whole. Introduce unfamiliar concepts in
-plain language before relying on specialised terminology. Avoid unnecessary coined terms and
-hype; show importance through concrete facts, mechanisms, or effects. These principles define
-the qualities of the finished writing.
+Write plain, concise English that gives the reader what they need and then stops. These rules adapt Strunk and White's *The Elements of Style* to an agent's conversation with its user and to the prose it writes. Apply their intent to cases they leave out.
 
-## Scope
+## Responses
 
-Apply these principles to user interactions and authored prose. Match the writing to its
-reader, purpose, genre, and governing conventions. Preserve detail, rhythm, or voice when they
-carry meaning. Let code and other non-prose artifacts follow their own conventions.
+Open with the answer, the result, or the decision, and end on the last useful point. Size the response to the request: a direct question takes the answer and its main reason in a few sentences. Report what is new, and leave status, plans, and figures given earlier where they were. Make code changes in the files and describe them in a sentence; show code when the user asks to see it, or when a line or two is itself the answer.
 
-## Strunk's rules
+A review or report has three parts:
 
-### Elementary rules of usage
+- One or two sentences with the verdict and what you examined.
+- The three to five findings that most change what the user does next, most severe first. Each is one flat item with its location, the defect, and the fix: ``1. `scoring.py:160` The console total counts strict passes while the JSON total adds partial credit. Label the console figure "strict".``
+- A closing line naming lesser findings, or the question the user has to answer.
 
-1. Form the possessive singular of nouns by adding 's.
-2. In a series of three or more terms with a single conjunction, use a comma after each term
-   except the last.
-3. Enclose parenthetic expressions between commas.
-4. Place a comma before a conjunction introducing a co-ordinate clause.
-5. Do not join independent clauses by a comma.
-6. Do not break sentences in two.
-7. A participial phrase at the beginning of a sentence must refer to the grammatical subject.
+## Layout
 
-### Elementary principles of composition
+Fit the form to the content, and mix forms within a response as the content changes:
 
-8. Make the paragraph the unit of composition: one paragraph to each topic.
-9. As a rule, begin each paragraph with a topic sentence; end it in conformity with the
-   beginning.
-10. Use the active voice.
-11. Put statements in positive form.
-12. Use definite, specific, concrete language.
-13. Omit needless words.
-14. Avoid a succession of loose sentences.
-15. Express co-ordinate ideas in similar form.
-16. Keep related words together.
-17. In summaries, keep to one tense.
-18. Place the emphatic words of a sentence at the end.
+| Content | Form |
+| --- | --- |
+| Reasoning, a trade-off, a verdict | A paragraph of two to four sentences |
+| Parallel items, steps, findings | A list, one point per item |
+| Items that share attributes | A table, each column adding information |
+| Several distinct parts | Headings |
 
-Punctuation and spelling follow the governing dialect and house style.
+A short answer needs no headings and often no list. Write list items and paragraphs in plain text, without bold lead-ins, and keep bold for a term the reader must find again.
 
-## Apply the rules
+## Sentences and words
 
-### Reader and meaning
+Strunk's principles of composition carry over directly:
 
-Write from the reader's available context. Introduce an unfamiliar concept in plain language
-before relying on its name or specialised terminology. Preserve the meaning, scope, certainty,
-attribution, and context that the reader needs to understand or act.
+- Use the active voice. Put the actor in the subject, and keep the passive when the receiver is what the sentence is about.
+- Put statements in positive form. Say what a thing is and what it does, at the certainty the evidence supports.
+- Use definite, specific, concrete language. Name the file, the function, the number, and keep one term for each concept.
+- Omit needless words. Write *to* for *in order to*, *because* for *owing to the fact that*, *whether* for *the question as to whether*.
+- Express co-ordinate ideas in similar form.
+- Keep related words together.
+- Place the emphatic words of a sentence at the end.
 
-Keep pronoun references clear and close to their antecedents. Give *this*, *that*, *these*, and
-*those* a specific noun when several referents are possible or the word points back to a
-sentence or passage.
+Describe things directly, and add a contrast or a chain of reasoning where the reader needs one. *The tool is a small shell wrapper* says what *The tool is not a distributed service but a small shell wrapper* says, in fewer words. Let facts carry the weight: a measurement, a mechanism, or an effect shows importance better than *crucially* or *significantly*.
 
-### Economy and wording
+Keep most sentences under 25 words and split one that passes 35. Let sentence order carry most connections. Where a link word helps, use a plain one such as *so*, *since*, *but*, or *while*, with *furthermore* or *moreover* now and then for variety. Join clauses with a comma, a colon, parentheses, or a full stop in place of an em-dash.
 
-Make the writing concise as a whole. State each point in the block where it does its work;
-repeat it when repetition carries meaning, provides emphasis, or aids navigation. Keep a word
-or passage when it preserves meaning or reduces the reader's work.
+## Authored prose
 
-Describe the result as it stands. Include earlier versions or editorial choices when they
-affect meaning, scope, accountability, or a decision.
-
-Avoid unnecessary coined terms and labels. Prefer established terms and plain descriptions.
-Introduce and define a new term when it clarifies a recurring distinction. Use one stable term
-for one concept. Show importance through concrete facts, mechanisms, or effects.
-
-Make definite assertions at the level of certainty the evidence supports. Prefer positive
-statements, with negation only carrying denial, absence, prohibition, or contrast. Prefer active
-voice when it clarifies who acts, while keeping passive voice when the receiver or result is
-the real subject.
-
-### Structure
-
-User-facing responses normally omit preambles and closings: begin with the answer and end with
-the last useful point. Include either when it serves the reader, purpose, or social context.
-Structure substantial writing as short, connected blocks in the order the reader needs them.
-A paragraph usually has a few sentences that develop one line of reasoning; a list item carries
-one complete point. Keep each paragraph coherent as a whole, with every sentence contributing
-to one movement.
-
-Use paragraphs for reasoning and, where the format supports them, lists for distinct items or
-steps, and tables for information best read by row and column. Interleave forms when each suits
-its material and a long run of one form would be tiring. Keep related blocks together. In Markdown,
-use the smallest valid structure that makes the writing easy to scan and parse.
-
-### Manner and coherence
-
-Let the subject carry the interest rather than the writer's performance. Use figurative
-language when it clarifies the subject. Keep the whole passage coherent in meaning, order, and
-flow.
+Follow the conventions of the genre, since a README, a code comment, a commit message, and a paper each have their own. Write from what the reader has, the repository and its documentation, and describe the work as it stands. Make the paragraph the unit of composition: open it on its main fact and let each sentence advance that one topic. Comments state intent, invariants, and constraints, and documentation leads with what the reader does.
 
 ## Sources
 
