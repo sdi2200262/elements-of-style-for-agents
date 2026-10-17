@@ -1,0 +1,27 @@
+{
+  "name": "elements-of-style-for-agents",
+  "owner": {
+    "name": "CobuterMan"
+  },
+  "description": "Plain-English, unforced writing standard and interaction guide for AI agents.",
+  "plugins": [
+    {
+      "name": "elements-of-style",
+      "source": "./",
+      "description": "Apply plain-English, unforced writing principles to user interaction and authored prose.",
+      "category": "communication",
+      "tags": [
+        "style",
+        "writing",
+        "communication",
+        "plain-english"
+      ],
+      "license": "CC0-1.0",
+      "homepage": "https://github.com/sdi2200262/elements-of-style-for-agents",
+      "repository": "https://github.com/sdi2200262/elements-of-style-for-agents",
+      "author": {
+        "name": "CobuterMan"
+      }
+    }
+  ]
+}

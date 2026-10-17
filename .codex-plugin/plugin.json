@@ -1,0 +1,14 @@
+{
+  "name": "elements-of-style",
+  "description": "Plain-English, unforced writing and interaction style standard for Codex.",
+  "version": "1.0.0",
+  "author": {
+    "name": "CobuterMan"
+  },
+  "homepage": "https://github.com/sdi2200262/elements-of-style-for-agents",
+  "repository": "https://github.com/sdi2200262/elements-of-style-for-agents",
+  "license": "CC0-1.0",
+  "skills": [
+    "./codex/skills/"
+  ]
+}
