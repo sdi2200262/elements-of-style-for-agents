@@ -1,0 +1,33 @@
+name: Check and Validate Tokens
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+
+      - name: Validate token limits
+        run: |
+          uv run --with tiktoken python3 scripts/count-tokens.py --max-tokens 2000
+
+      - name: Check skill copies match
+        run: |
+          diff claude/skills/elements-of-style/SKILL.md codex/skills/elements-of-style/SKILL.md
+          diff AGENTS.md CLAUDE.md
+
+      - name: Validate JSON manifests
+        run: |
+          python3 -m json.tool .claude-plugin/plugin.json > /dev/null
+          python3 -m json.tool .claude-plugin/marketplace.json > /dev/null
+          python3 -m json.tool .codex-plugin/plugin.json > /dev/null
