@@ -1,7 +1,7 @@
 {
   "name": "elements-of-style",
-  "description": "Plain-English, unforced writing and interaction style standard for Claude Code.",
-  "version": "1.0.0",
+  "description": "Plain, concise communication and authored prose for Claude Code.",
+  "version": "1.1.0",
   "author": {
     "name": "CobuterMan"
   },

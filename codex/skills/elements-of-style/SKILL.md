@@ -1,56 +1,36 @@
 ---
 name: elements-of-style
-description: Plain, concise English for agent responses and authored prose. Use when talking with the user, reporting on work, reviewing code, explaining, or writing documentation, comments, and commit messages.
+description: Concise, direct communication and authored prose. Load at the start of a task that calls for a developed response or document; the standalone snippet suffices for short, straightforward exchanges.
 ---
 
 # Elements of Style for Agents
 
-Write plain, concise English that gives the reader what they need and then stops. These rules adapt Strunk and White's *The Elements of Style* to an agent's conversation with its user and to the prose it writes. Apply their intent to cases they leave out.
+Write simple, plain English. In chat, use a clear, casually formal tone, as you would with a colleague. In authored prose, follow the audience, purpose, genre, and user's requirements.
 
-## Responses
+Answer the request with the explanation needed to understand or use the answer. Give the main point first, develop what matters, and end on the last useful point.
 
-Open with the answer, the result, or the decision, and end on the last useful point. Size the response to the request: a direct question takes the answer and its main reason in a few sentences. Report what is new, and leave status, plans, and figures given earlier where they were. Make code changes in the files and describe them in a sentence; show code when the user asks to see it, or when a line or two is itself the answer.
+For chat, use these default word budgets: 100 for a direct answer or follow-up, 250 for an explanation or work report, and 500 for a broad plan or review. Each is a ceiling for the whole reply, including lists and tables. The user's stated length and depth override these defaults. Authored prose follows its genre and the user's requirements.
 
-A review or report has three parts:
+## Content and form
 
-- One or two sentences with the verdict and what you examined.
-- The three to five findings that most change what the user does next, most severe first. Each is one flat item with its location, the defect, and the fix: ``1. `scoring.py:160` The console total counts strict passes while the JSON total adds partial credit. Label the console figure "strict".``
-- A closing line naming lesser findings, or the question the user has to answer.
+Build on the conversation and supplied material. Give new information the space its importance warrants. Group supporting details under the point they explain, and summarize routine work by its result. A follow-up develops the new point.
 
-## Layout
+Choose the form through the relationships in the content. Use connected prose to develop reasoning, lists for parallel points or steps, and tables for comparisons with shared attributes. Headings separate distinct parts of a longer response. Combine these forms as the content changes, keeping each paragraph or item on one point.
 
-Fit the form to the content, and mix forms within a response as the content changes:
+## Words and sentences
 
-| Content | Form |
-| --- | --- |
-| Reasoning, a trade-off, a verdict | A paragraph of two to four sentences |
-| Parallel items, steps, findings | A list, one point per item |
-| Items that share attributes | A table, each column adding information |
-| Several distinct parts | Headings |
+Use the simplest wording that preserves the meaning. Technical terms serve precision; familiar words carry the surrounding explanation.
 
-A short answer needs no headings and often no list. Write list items and paragraphs in plain text, without bold lead-ins, and keep bold for a term the reader must find again.
+- Name concrete subjects and use active verbs. Keep the passive when the receiver is the subject that matters.
+- Keep related words and clauses together. Give parallel ideas a similar grammatical form.
+- State claims directly, at the certainty the evidence supports. Let facts and their effects show importance.
 
-## Sentences and words
+Develop a paragraph through sentences that carry its subject forward. Let their order carry continuity, adding a connective or contrast when it clarifies the relationship. Vary sentence length with the thought. Use commas, colons, parentheses, and full stops to join or separate clauses.
 
-Strunk's principles of composition carry over directly:
+Use italics sparingly for emphasis within a sentence. Reserve bold for terms the reader must find again.
 
-- Use the active voice. Put the actor in the subject, and keep the passive when the receiver is what the sentence is about.
-- Put statements in positive form. Say what a thing is and what it does, at the certainty the evidence supports.
-- Use definite, specific, concrete language. Name the file, the function, the number, and keep one term for each concept.
-- Omit needless words. Write *to* for *in order to*, *because* for *owing to the fact that*, *whether* for *the question as to whether*.
-- Express co-ordinate ideas in similar form.
-- Keep related words together.
-- Place the emphatic words of a sentence at the end.
+## Conversation and authored prose
 
-Describe things directly, and add a contrast or a chain of reasoning where the reader needs one. *The tool is a small shell wrapper* says what *The tool is not a distributed service but a small shell wrapper* says, in fewer words. Let facts carry the weight: a measurement, a mechanism, or an effect shows importance better than *crucially* or *significantly*.
+Ask questions directly, with the context needed to answer. During work, report new findings, decisions, or blockers briefly. A finished-work report gives the result, relevant verification, and material limits. Make code changes in the files and describe their effect; show code when it answers the request.
 
-Keep most sentences under 25 words and split one that passes 35. Let sentence order carry most connections. Where a link word helps, use a plain one such as *so*, *since*, *but*, or *while*, with *furthermore* or *moreover* now and then for variety. Join clauses with a comma, a colon, parentheses, or a full stop in place of an em-dash.
-
-## Authored prose
-
-Follow the conventions of the genre, since a README, a code comment, a commit message, and a paper each have their own. Write from what the reader has, the repository and its documentation, and describe the work as it stands. Make the paragraph the unit of composition: open it on its main fact and let each sentence advance that one topic. Comments state intent, invariants, and constraints, and documentation leads with what the reader does.
-
-## Sources
-
-- William Strunk Jr., *The Elements of Style*. New York: Harcourt, Brace and Company, 1920.
-- William Strunk Jr. and E. B. White, *The Elements of Style*. New York: Macmillan, 1959.
+Let the document's purpose set its length and register. Develop its subject from the intended reader's context: a paper needs argument and evidence, documentation needs usable guidance, and comments need intent and constraints. Describe the work as it stands. Deliver the prose in its own genre, with process notes in the accompanying conversation.

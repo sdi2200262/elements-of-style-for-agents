@@ -1,48 +1,78 @@
 # The Elements of Style for Agents
 
-A concise writing and communication standard for AI coding agents, adapted from William Strunk Jr. and E. B. White's classic *The Elements of Style*. It translates their foundational principles (active voice, positive form, paragraphs as units of composition, omitting needless words) into an opinionated guide that can be used for sustained dialogue in conversations and authored prose. For quick, or small requests, the rules in `AGENTS.md` or `CLAUDE.md` provide a compact snippet you can copy into your project's root instructions without loading the full skill.
+A writing and communication standard for AI coding agents, adapted from William Strunk Jr. and E. B. White's *The Elements of Style*. It draws on research by [Chandler and Sweller (1991)](https://doi.org/10.1207/s1532690xci0804_2) on avoiding redundancy and [Kalyuga et al. (2003)](https://doi.org/10.1207/s15326985ep3801_4) on adapting explanation to prior knowledge, aiming for concise, direct, compact responses that are easy to scan.
 
-## Token Footprint
+The same principles guide authored prose, adapted to its audience, purpose, genre, and the user's requirements. The standalone snippet in `AGENTS.md` or `CLAUDE.md` handles short exchanges. The full skill develops the guidance for substantial responses and documents.
 
-Each file is small enough to keep in context permanently. Counts use the `o200k_base` tokenizer:
+## Install
 
-| File | Role | Tokens | Words |
-| --- | --- | --- | --- |
-| `AGENTS.md` | Standalone snippet | 373 | 305 |
-| `SKILL.md` | Full skill | 921 | 715 |
+Install the plugin in each assistant you use. Each install adds the
+`elements-of-style` skill from the same marketplace.
 
-CI checks every file against a ceiling of 2,000 tokens with `scripts/count-tokens.py`.
+<details>
+<summary><strong>Claude Code</strong></summary>
 
-## Installation
+Run in Claude Code and choose user-wide or project scope when installing:
 
-Marketplace plugins install the full skill (`elements-of-style`) for Claude Code and Codex:
-
-### Claude Code
-
-```bash
-claude plugin marketplace add sdi2200262/elements-of-style-for-agents
-claude plugin install elements-of-style@elements-of-style-for-agents
+```text
+/plugin marketplace add sdi2200262/elements-of-style-for-agents
+/plugin install elements-of-style@elements-of-style-for-agents
 ```
 
-### Codex
+</details>
 
-```bash
+<details>
+<summary><strong>Codex</strong></summary>
+
+Run in a terminal:
+
+```sh
 codex plugin marketplace add sdi2200262/elements-of-style-for-agents
 codex plugin add elements-of-style@elements-of-style-for-agents
 ```
 
-### Standalone Snippet
+</details>
 
-Marketplace plugins do not modify your project's root instructions. If you prefer persistent rules without installing or invoking the skill, copy the contents of [`AGENTS.md`](AGENTS.md) or [`CLAUDE.md`](CLAUDE.md) directly into your repository's root instructions.
+<details>
+<summary><strong>Standalone instructions</strong></summary>
 
-## Sources and Adaptation
+Copy [AGENTS.md](AGENTS.md) or [CLAUDE.md](CLAUDE.md) into your project's
+root instructions. The snippet works on its own and asks the agent to load
+the full skill, when installed, for substantial responses and documents.
+Plugin installation does not change your root instructions.
 
-This work draws on:
+</details>
 
-- William Strunk Jr., *The Elements of Style*. New York: Harcourt, Brace and Company, 1920.
-- William Strunk Jr. and E. B. White, *The Elements of Style*. New York: Macmillan, 1959.
+## Configure
 
-This independent adaptation applies their principles to agent-written communication and prose. The cited books remain separate works.
+The chat word budgets are arbitrary defaults, not limits established by the
+cited research. Adjust them to your needs in the copied snippet or installed
+skill, or give your preferred length in the conversation.
+
+| Chat response | Default word ceiling |
+| --- | --- |
+| Direct answer or follow-up | 100 |
+| Explanation or work report | 250 |
+| Broad plan or review | 500 |
+
+Each budget covers the whole reply, including lists and tables. The user's
+requested length and depth take precedence. Authored prose follows its genre
+and the user's requirements.
+
+Plugin updates can replace edits to bundled files. Keep lasting preferences
+in your project instructions.
+
+<details>
+<summary><strong>Instruction size</strong></summary>
+
+Counts use the `o200k_base` tokenizer:
+
+| File | Role | Tokens | Words |
+| --- | --- | --- | --- |
+| `AGENTS.md` | Standalone snippet | 551 | 454 |
+| `SKILL.md` | Full skill | 589 | 483 |
+
+</details>
 
 ## License
 

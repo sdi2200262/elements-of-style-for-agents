@@ -3,12 +3,12 @@
   "owner": {
     "name": "CobuterMan"
   },
-  "description": "Plain-English, unforced writing standard and interaction guide for AI agents.",
+  "description": "Plain, concise communication and authored prose for AI agents.",
   "plugins": [
     {
       "name": "elements-of-style",
       "source": "./",
-      "description": "Apply plain-English, unforced writing principles to user interaction and authored prose.",
+      "description": "Write concise, direct responses and adapt authored prose to its audience and genre.",
       "category": "communication",
       "tags": [
         "style",
@@ -21,7 +21,8 @@
       "repository": "https://github.com/sdi2200262/elements-of-style-for-agents",
       "author": {
         "name": "CobuterMan"
-      }
+      },
+      "version": "1.1.0"
     }
   ]
 }
