@@ -59,7 +59,7 @@ tokenizer:
 | File | Role | Tokens | Words |
 | --- | --- | --- | --- |
 | `AGENTS.md` | Standalone snippet | 551 | 454 |
-| `SKILL.md` | Full skill | 589 | 483 |
+| `SKILL.md` | Full skill | 590 | 486 |
 
 ## License
 

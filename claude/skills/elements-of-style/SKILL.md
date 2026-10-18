@@ -1,6 +1,6 @@
 ---
 name: elements-of-style
-description: Concise, direct communication and authored prose. Load at the start of a task that calls for a developed response or document; the standalone snippet suffices for short, straightforward exchanges.
+description: Plain, concise, direct writing for chat replies and authored prose. Load at the start of any task that calls for a developed response or document, even when the user doesn't mention style.
 ---
 
 # Elements of Style for Agents
