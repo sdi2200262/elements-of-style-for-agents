@@ -45,34 +45,21 @@ Plugin installation does not change your root instructions.
 
 ## Configure
 
-The chat word budgets are arbitrary defaults, not limits established by the
-cited research. Adjust them to your needs in the copied snippet or installed
-skill, or give your preferred length in the conversation.
-
-| Chat response | Default word ceiling |
-| --- | --- |
-| Direct answer or follow-up | 100 |
-| Explanation or work report | 250 |
-| Broad plan or review | 500 |
-
-Each budget covers the whole reply, including lists and tables. The user's
-requested length and depth take precedence. Authored prose follows its genre
-and the user's requirements.
+The word budgets used here are arbitrary defaults. Adjust them to your needs in the
+copied snippet or installed skill, or give your preferred length in the conversation.
 
 Plugin updates can replace edits to bundled files. Keep lasting preferences
 in your project instructions.
 
-<details>
-<summary><strong>Instruction size</strong></summary>
+# Token Footprint
 
-Counts use the `o200k_base` tokenizer:
+The skill and snippet are kept short to save tokens. Counts use the `o200k_base`
+tokenizer:
 
 | File | Role | Tokens | Words |
 | --- | --- | --- | --- |
 | `AGENTS.md` | Standalone snippet | 551 | 454 |
 | `SKILL.md` | Full skill | 589 | 483 |
-
-</details>
 
 ## License
 
