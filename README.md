@@ -31,6 +31,8 @@ codex plugin marketplace add sdi2200262/elements-of-style-for-agents
 codex plugin add elements-of-style@elements-of-style-for-agents
 ```
 
+Start a new Codex session after installation.
+
 </details>
 
 <details>
