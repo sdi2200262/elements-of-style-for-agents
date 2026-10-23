@@ -63,8 +63,8 @@ tokenizer:
 
 | File | Role | Tokens | Words |
 | --- | --- | --- | --- |
-| `AGENTS.md` | Standalone snippet | 665 | 558 |
-| `SKILL.md` | Full skill | 1208 | 1011 |
+| `AGENTS.md` | Standalone snippet | 707 | 596 |
+| `SKILL.md` | Full skill | 1250 | 1049 |
 
 ## License
 
