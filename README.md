@@ -2,7 +2,9 @@
 
 A writing and communication standard for AI coding agents, adapted from William Strunk Jr. and E. B. White's *The Elements of Style*. It draws on research by [Chandler and Sweller (1991)](https://doi.org/10.1207/s1532690xci0804_2) on avoiding redundancy and [Kalyuga et al. (2003)](https://doi.org/10.1207/s15326985ep3801_4) on adapting explanation to prior knowledge, aiming for concise, direct, compact responses that are easy to scan.
 
-The same principles guide authored prose, adapted to its audience, purpose, genre, and the user's requirements. The standalone snippet in `AGENTS.md` or `CLAUDE.md` handles short exchanges. The full skill develops the guidance for substantial responses and documents.
+The guidance also draws on [Gopen and Swan (1990)](https://www.gatsby.ucl.ac.uk/~pel/misc/gopen_swan.pdf) for sentence structure and [Nielsen (1997)](https://www.nngroup.com/articles/how-users-read-on-the-web/) for scannable presentation.
+
+The same principles guide authored prose, adapted to its reader, purpose, and setting. The snippet in `AGENTS.md` or `CLAUDE.md` works on its own as system-prompt instructions. The skill includes the same guidance and adds rules for documents, comments, and other authored prose.
 
 ## Install
 
@@ -40,7 +42,8 @@ Start a new Codex session after installation.
 
 Copy [AGENTS.md](AGENTS.md) or [CLAUDE.md](CLAUDE.md) into your project's
 root instructions. The snippet works on its own and asks the agent to load
-the full skill, when installed, for substantial responses and documents.
+the skill, when installed, for documents.
+
 Plugin installation does not change your root instructions.
 
 </details>
@@ -60,8 +63,8 @@ tokenizer:
 
 | File | Role | Tokens | Words |
 | --- | --- | --- | --- |
-| `AGENTS.md` | Standalone snippet | 551 | 454 |
-| `SKILL.md` | Full skill | 590 | 486 |
+| `AGENTS.md` | Standalone snippet | 665 | 558 |
+| `SKILL.md` | Full skill | 1208 | 1011 |
 
 ## License
 
